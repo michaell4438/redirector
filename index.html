@@ -1,0 +1,23 @@
+<!-- Create a website which the user can put a ?{name} after the url to
+ specify destination.
+ Example: example.com/?test --->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Redirect</title>
+</head>
+<body>
+    <script>
+        const url = window.location.href;
+        const name = url.split("?")[1];
+        if (name === "gh") {
+            window.location.href = "https://github.com/michaell4438";
+        }
+        else if (name === "robot") {
+            window.location.href = "https://github.com/XaverianTeamRobotics/FtcRobotController";
+        }
+        else if (name === "tinkerbad") {
+            window.location.href = "https://tinkerbad.com";
+        }
+    </script>
+</body>
